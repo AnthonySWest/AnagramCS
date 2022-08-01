@@ -47,6 +47,7 @@ namespace TestAnagram
             int[] str1AlphaCounts = new int[nAlphaChars];
             int[] str2AlphaCounts = new int[nAlphaChars];
 
+            //build char counts for string 1 for only alpha letters
             foreach (char ch in str1)
             {
                 int idx = ch - 'a';
@@ -55,6 +56,7 @@ namespace TestAnagram
                     str1AlphaCounts[idx]++;
             }
 
+            //build char counts for string 2 for only alpha letters
             foreach (char ch in str2)
             {
                 int idx = ch - 'a';
