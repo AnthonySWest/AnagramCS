@@ -37,9 +37,6 @@ namespace TestAnagram
             if (string.IsNullOrEmpty(str1) || string.IsNullOrEmpty(str2))
                 return false;
 
-            if (str1.Length != str2.Length)
-                return false;
-
             str1 = str1.ToLower();
             str2 = str2.ToLower();
 
