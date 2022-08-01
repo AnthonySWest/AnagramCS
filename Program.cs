@@ -10,6 +10,7 @@ namespace TestAnagram
 {
     internal class Program
     {
+        // ----------------------------------------------------------------------------------------
         static int Main(string[] args)
         {
             if (args.Length < 2)
@@ -30,6 +31,7 @@ namespace TestAnagram
             return 0;
         }
 
+        // ----------------------------------------------------------------------------------------
         static bool IsAnagram(string str1, string str2)
         {
             if (string.IsNullOrEmpty(str1) || string.IsNullOrEmpty(str2))
@@ -67,6 +69,7 @@ namespace TestAnagram
             return CountsTheSame(str1AlphaCounts, str2AlphaCounts);
         }
 
+        // ----------------------------------------------------------------------------------------
         private static bool CountsTheSame(int[] str1AlphaCounts, int[] str2AlphaCounts)
         {
             if (null == str1AlphaCounts || null == str2AlphaCounts)
@@ -83,5 +86,9 @@ namespace TestAnagram
 
             return true;
         }
+
+        // ----------------------------------------------------------------------------------------
+
+        // ----------------------------------------------------------------------------------------
     }
 }
